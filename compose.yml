@@ -1,0 +1,17 @@
+services:
+  web:
+    build: .
+    volumes:
+      # ホストのカレントディレクトリをコンテナの /workspace にマウント
+      - .:/workspace
+      # gemのインストール先をボリュームとして保持（再構築してもgemが消えないように）
+      - bundle_data:/usr/local/bundle
+    ports:
+      - "3000:3000"
+    stdin_open: true
+    tty: true
+    environment:
+      - BINDING=0.0.0.0
+
+volumes:
+  bundle_data:
