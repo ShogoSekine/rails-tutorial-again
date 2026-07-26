@@ -67,3 +67,15 @@ yarn-debug.log*
 /storage/*
 !/storage/.keep
 /public/uploads
+
+# MacOS固有の不要ファイル
+.DS_Store
+Thumbs.db
+
+# エディタ設定
+.vscode/
+.idea/
+
+# 今後Railsで生成されるログや一時ファイル
+/log/*
+/tmp/*
