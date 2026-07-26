@@ -13,4 +13,6 @@ root@7bef011cc440:/workspace# rails -v
 Rails 7.2.0
 ```
 
-## rails newから始めてね
+### rails newから始めてね
+### 以降のコマンドは、rails tutorialのページを見ながら自分でやっていってね
+### もし環境がぶっ壊れたら、一旦全部消してリポジトリをcloneしなおしてね
